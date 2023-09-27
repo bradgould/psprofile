@@ -83,6 +83,9 @@ function sha256
 Set-Alias -Name su -Value admin
 Set-Alias -Name sudo -Value admin
 
+# Change how PowerShell does tab completion
+Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
+
 # Clear the command history in the current session and delete the history file
 function history-clear
 {
